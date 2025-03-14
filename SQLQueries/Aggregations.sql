@@ -58,4 +58,9 @@ select prod_id, count(PROD_ID)
 from sh.SALES
 group by prod_id
 
+-- 2. Find the average sale amount for each product
+select prod_id, avg(AMOUNT_SOLD)
+from sh.SALES
+group by prod_id
+
 
