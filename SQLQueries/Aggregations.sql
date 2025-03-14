@@ -50,4 +50,12 @@ select EXTRACT(YEAR FROM hire_date) HRD_Year,count(EMPLOYEE_ID)
 from hr.EMPLOYEES
 group by HRD_Year
 
+Sales:
+  
+-- 1. Count the number of sales transactions for each product.  
+--select * from sh.SALES
+select prod_id, count(PROD_ID)
+from sh.SALES
+group by prod_id
+
 
