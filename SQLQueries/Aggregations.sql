@@ -14,4 +14,9 @@ SELECT DEPARTMENT_ID,MAX(SALARY),MIN(SALARY)
 from hr.employees
 group by DEPARTMENT_ID
 
+-- 4. Find the total salary paid in each department
+select department_id, sum(salary)
+from hr.EMPLOYEES
+group by DEPARTMENT_ID
+
 
