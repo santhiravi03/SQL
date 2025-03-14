@@ -25,4 +25,9 @@ select job_id,count(employee_id)
 from hr.EMPLOYEES
 group by JOB_ID
 
+-- 6. Find the average salary for each job role
+select job_id,AVG(SALARY)
+from hr.EMPLOYEES
+group by JOB_ID
+
 
