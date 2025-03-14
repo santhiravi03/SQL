@@ -19,4 +19,10 @@ select department_id, sum(salary)
 from hr.EMPLOYEES
 group by DEPARTMENT_ID
 
+-- 5. Count the number of employees in each job role
+--desc hr.employees
+select job_id,count(employee_id)
+from hr.EMPLOYEES
+group by JOB_ID
+
 
