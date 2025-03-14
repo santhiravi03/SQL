@@ -9,4 +9,9 @@ GROUP BY department_id;
 select DEPARTMENT_ID,avg(SALARY) from hr.employees
 group by DEPARTMENT_ID
 
+-- 3. Find the maximum and minimum salary in each department
+SELECT DEPARTMENT_ID,MAX(SALARY),MIN(SALARY)
+from hr.employees
+group by DEPARTMENT_ID
+
 
