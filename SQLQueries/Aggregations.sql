@@ -30,4 +30,9 @@ select job_id,AVG(SALARY)
 from hr.EMPLOYEES
 group by JOB_ID
 
+-- 7. Find the maximum salary for each job role
+select job_id,MAX(SALARY)
+from hr.EMPLOYEES
+group by JOB_ID
+
 
