@@ -35,4 +35,19 @@ select job_id,MAX(SALARY)
 from hr.EMPLOYEES
 group by JOB_ID
 
+-- 8. Find the minimum salary for each job role
+select job_id,MIN(SALARY)
+from hr.EMPLOYEES
+group by JOB_ID
+
+-- 9. Find the total salary paid for each job role
+select job_id,sum(SALARY)
+from hr.EMPLOYEES
+group by JOB_ID
+
+-- 10. Count the number of employees hired in each year
+select EXTRACT(YEAR FROM hire_date) HRD_Year,count(EMPLOYEE_ID)
+from hr.EMPLOYEES
+group by HRD_Year
+
 
